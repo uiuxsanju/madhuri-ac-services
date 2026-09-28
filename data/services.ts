@@ -27,6 +27,8 @@ export type Service = {
   /** Optional photo path under /public. Auto-detected from /public/images/services/<slug>.(webp|jpg|png) if omitted. */
   image?: string;
   alt: string;
+  /** Real photos of completed work, shown on the service page. */
+  gallery?: { src: string; alt: string }[];
 };
 
 type Input = Omit<Service, "symptoms" | "whenNeeded" | "alt" | "keywords"> & {
@@ -749,7 +751,48 @@ export const SERVICES: Service[] = [
     description:
       "LED lighting for homes, offices and shops — including panel lights, cove strips and spot lights — installed with suitable drivers and neat wiring.",
     includes: ["LED fixture fitting", "Driver connection", "Wiring and switching", "Testing"],
-    relatedServices: ["switch-socket-installation", "electrical-installation", "commercial-wiring"],
+    relatedServices: ["linear-led-ceiling-light-installation", "switch-socket-installation", "electrical-installation"],
+  }),
+  s({
+    slug: "linear-led-ceiling-light-installation",
+    name: "Linear LED Ceiling Light Installation",
+    category: "electrical",
+    icon: "Lightbulb",
+    commercial: true,
+    shortDescription: "Modern linear LED profile lights set into the ceiling in clean lines and patterns.",
+    description:
+      "Linear LED ceiling lights give rooms a clean, modern look — continuous lines of light recessed into the ceiling in straight runs, squares or custom patterns. The layout is marked on the ceiling, the ceiling is cut for the aluminium profile, LED strips and drivers are fitted and wired, and the diffuser is snapped in for an even, glare-free line of light.",
+    symptoms: [
+      "Planning a modern ceiling for a living room, bedroom or office",
+      "Want even, glare-free lighting without bulky fixtures",
+      "Renovating a false ceiling or gypsum ceiling",
+      "Adding feature lighting in patterns or geometric designs",
+    ],
+    includes: [
+      "Layout marking for lines, squares or custom patterns",
+      "Ceiling cut-out for the LED profile",
+      "Aluminium profile, LED strip and diffuser fitting",
+      "LED driver installation and wiring",
+      "Switching / connection to the circuit",
+      "Final lighting test and alignment check",
+    ],
+    whenNeeded: [
+      "During interior work or false-ceiling installation",
+      "When upgrading old tube lights or panels to modern lighting",
+      "For living rooms, bedrooms, offices, showrooms and shops",
+    ],
+    keywords: [
+      "linear LED ceiling light installation Visakhapatnam",
+      "profile light installation Vizag",
+      "linear light fitting near me",
+      "LED strip ceiling light Visakhapatnam",
+    ],
+    alt: "Linear LED ceiling profile lights installed in a Visakhapatnam home by Madhuri AC Service",
+    gallery: [
+      { src: "/images/work/linear-led-1.webp", alt: "Our electrician fitting a linear LED ceiling profile light" },
+      { src: "/images/work/linear-led-2.webp", alt: "Completed linear LED ceiling light pattern in a bedroom" },
+    ],
+    relatedServices: ["led-light-installation", "switch-socket-installation", "house-wiring", "electrical-installation"],
   }),
   s({
     slug: "mcb-installation",
@@ -970,6 +1013,8 @@ export const BOOKING_OPTIONS = [
   "Electrical Repair",
   "Electrical Wiring",
   "Fan Installation",
+  "Linear LED Ceiling Light Installation",
+  "LED Light Installation",
   "MCB Installation",
   "Other",
 ];

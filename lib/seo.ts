@@ -58,6 +58,7 @@ export function localBusinessLd() {
       streetAddress: `${BUSINESS.address.line1}, ${BUSINESS.address.line2}`,
       addressLocality: BUSINESS.address.city,
       addressRegion: BUSINESS.address.state,
+      postalCode: BUSINESS.address.postalCode,
       addressCountry: BUSINESS.address.countryCode,
     },
     hasMap: MAPS_SEARCH_URL,

@@ -67,7 +67,7 @@ export default function Footer({ logoSrc }: { logoSrc?: string }) {
             <span>
               {BUSINESS.address.line1},<br />
               {BUSINESS.address.line2}, {BUSINESS.address.city},<br />
-              {BUSINESS.address.state}
+              {BUSINESS.address.state} {BUSINESS.address.postalCode}
             </span>
           </address>
           <a href={DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-white underline underline-offset-4 hover:text-brand-200">

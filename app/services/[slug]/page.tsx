@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AlertTriangle, ArrowRight, CalendarCheck, CheckCircle2, Clock, MapPin } from "lucide-react";
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   if (!s || s.pageHref) return {};
   return buildMetadata({
     title: `${s.name} in Visakhapatnam | Madhuri Electrical`,
-    description: `${s.shortDescription.replace(/\.$/, "")} — ${s.name.toLowerCase()} in Visakhapatnam by Madhuri Electrical, Maddilapalem. Call or WhatsApp +91 96665 42541.`,
+    description: `${s.shortDescription.replace(/\.$/, "")} — ${s.name.toLowerCase()} in Visakhapatnam by Madhuri Electrical, Seethammadhara. Call or WhatsApp +91 96665 42541.`,
     path: `/services/${s.slug}`,
     keywords: s.keywords,
   });
@@ -167,6 +168,21 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
           </aside>
         </div>
       </section>
+
+      {s.gallery && s.gallery.length > 0 && (
+        <section className="section" aria-labelledby="work-title">
+          <div className="container-page">
+            <SectionHeading id="work-title" eyebrow="Our work" title={`${s.name} — recent work`} intro="Real photos from our jobs in Visakhapatnam." />
+            <ul className="grid max-w-3xl grid-cols-2 gap-3 sm:gap-5">
+              {s.gallery.map((g) => (
+                <li key={g.src} className="relative aspect-[9/16] overflow-hidden rounded-2xl bg-navy-900 shadow-[var(--shadow-card)]">
+                  <Image src={g.src} alt={g.alt} fill sizes="(min-width:1024px) 25vw, 50vw" className="object-cover" />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {related.length > 0 && (
         <section className="section bg-surface" aria-labelledby="related-title">

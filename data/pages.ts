@@ -25,7 +25,7 @@ export const CATEGORY_PAGES: Record<string, CategoryPageConfig> = {
     path: "/ac-services",
     metaTitle: "AC Service in Visakhapatnam | Madhuri Electrical",
     metaDescription:
-      "AC service in Visakhapatnam — general service, deep cleaning, jet cleaning, gas charging and split, window & inverter AC installation by Madhuri Electrical, Maddilapalem.",
+      "AC service in Visakhapatnam — general service, deep cleaning, jet cleaning, gas charging and split, window & inverter AC installation by Madhuri Electrical, Seethammadhara.",
     keywords: ["AC service in Visakhapatnam", "AC service near me", "AC technician near me", "AC servicing Vizag"],
     crumb: "AC Services",
     eyebrow: "AC Services",
@@ -62,7 +62,7 @@ export const CATEGORY_PAGES: Record<string, CategoryPageConfig> = {
     path: "/ac-repair",
     metaTitle: "AC Repair in Visakhapatnam | Madhuri Electrical",
     metaDescription:
-      "AC repair in Visakhapatnam for AC not cooling, water leakage, ice formation, noise, PCB and compressor problems. Call or WhatsApp Madhuri Electrical, Maddilapalem.",
+      "AC repair in Visakhapatnam for AC not cooling, water leakage, ice formation, noise, PCB and compressor problems. Call or WhatsApp Madhuri Electrical, Seethammadhara.",
     keywords: ["AC repair in Visakhapatnam", "AC repair near me", "AC not cooling service Visakhapatnam", "AC PCB repair Visakhapatnam", "AC compressor repair Visakhapatnam"],
     crumb: "AC Repair",
     eyebrow: "AC Repair",
@@ -207,7 +207,7 @@ export const CATEGORY_PAGES: Record<string, CategoryPageConfig> = {
     ],
     sections: [
       { id: "wiring", heading: "Wiring & Installation", services: by("electrical-wiring", "house-wiring", "commercial-wiring", "electrical-installation", "switch-socket-installation", "earthing-work") },
-      { id: "fans-lights", heading: "Fans & Lighting", services: by("fan-installation", "ceiling-fan-installation", "exhaust-fan-installation", "led-light-installation") },
+      { id: "fans-lights", heading: "Fans & Lighting", services: by("fan-installation", "ceiling-fan-installation", "exhaust-fan-installation", "led-light-installation", "linear-led-ceiling-light-installation") },
       { id: "boards", heading: "MCB, DB Box & Panels", services: by("mcb-installation", "db-box-installation", "electrical-panel-installation", "circuit-breaker-replacement") },
       { id: "repair", heading: "Repair & Troubleshooting", services: by("electrical-repair", "short-circuit-repair", "power-failure-troubleshooting", "electrical-safety-inspection", "electrical-maintenance") },
       { id: "power", heading: "Power Backup & Protection", services: by("inverter-installation", "stabilizer-installation") },
@@ -219,7 +219,7 @@ export const CATEGORY_PAGES: Record<string, CategoryPageConfig> = {
       { href: "/electrical-repair", label: "Electrical Repair" },
       { href: "/services/mcb-installation", label: "MCB Installation" },
       { href: "/services/fan-installation", label: "Fan Installation" },
-      { href: "/services/led-light-installation", label: "LED Light Installation" },
+      { href: "/services/linear-led-ceiling-light-installation", label: "Linear LED Ceiling Lights" },
       { href: "/services/commercial-wiring", label: "Commercial Wiring" },
     ],
     bookingService: "Electrical Repair",
@@ -229,7 +229,7 @@ export const CATEGORY_PAGES: Record<string, CategoryPageConfig> = {
     path: "/electrical-repair",
     metaTitle: "Electrical Repair in Visakhapatnam | Madhuri Electrical",
     metaDescription:
-      "Electrical repair in Visakhapatnam — short circuits, tripping MCBs, power failures, faulty switches, sockets and wiring. Call Madhuri Electrical, Maddilapalem.",
+      "Electrical repair in Visakhapatnam — short circuits, tripping MCBs, power failures, faulty switches, sockets and wiring. Call Madhuri Electrical, Seethammadhara.",
     keywords: ["electrical repair in Visakhapatnam", "electrical repair near me", "electrician near me", "short circuit repair Vizag"],
     crumb: "Electrical Repair",
     eyebrow: "Electrical Repair",

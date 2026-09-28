@@ -15,19 +15,20 @@ export const BUSINESS = {
   whatsappNumber: "919666542541",
   whatsappUrl: "https://wa.me/919666542541",
   address: {
-    line1: "#53-23-20, Chaitanya Nagar",
-    line2: "Maddilapalem",
+    line1: "P8V8+8GH, HB Colony Road",
+    line2: "Seethammadhara, H B Colony",
     city: "Visakhapatnam",
     state: "Andhra Pradesh",
+    postalCode: "530013",
     country: "India",
     countryCode: "IN",
   },
 } as const;
 
-export const ADDRESS_ONE_LINE = `${BUSINESS.address.line1}, ${BUSINESS.address.line2}, ${BUSINESS.address.city}, ${BUSINESS.address.state}, ${BUSINESS.address.country}`;
+export const ADDRESS_ONE_LINE = `${BUSINESS.address.line1}, ${BUSINESS.address.line2}, ${BUSINESS.address.city}, ${BUSINESS.address.state} ${BUSINESS.address.postalCode}, ${BUSINESS.address.country}`;
 
 const mapsQuery = encodeURIComponent(
-  `${BUSINESS.address.line1}, ${BUSINESS.address.line2}, ${BUSINESS.address.city}, ${BUSINESS.address.state}`,
+  `${BUSINESS.address.line1}, ${BUSINESS.address.line2}, ${BUSINESS.address.city}, ${BUSINESS.address.state} ${BUSINESS.address.postalCode}`,
 );
 
 /** Google Maps directions to the real address (no invented coordinates). */
@@ -35,10 +36,18 @@ export const DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destinatio
 /** Google Maps search for the address. */
 export const MAPS_SEARCH_URL = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 /**
- * Official Google Maps embed URL (Google Maps → Share → "Embed a map" → copy the src).
- * Set NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL to show the map. If not set, only directions are shown (no fake map).
+ * Google Maps embed of the real business address (the Plus Code pins the exact spot).
+ * Override with NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL — e.g. the "Embed a map" src from the
+ * Google Business Profile, which then shows the business pin instead of the address pin.
  */
-export const MAPS_EMBED_URL = process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL || "";
+export const MAPS_EMBED_URL =
+  process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL || `https://www.google.com/maps?q=${mapsQuery}&hl=en&z=17&output=embed`;
+
+/**
+ * Google Business Profile link used by the reviews section.
+ * Set NEXT_PUBLIC_GOOGLE_REVIEWS_URL to the profile's "Reviews" / "Write a review" link.
+ */
+export const GOOGLE_REVIEWS_URL = process.env.NEXT_PUBLIC_GOOGLE_REVIEWS_URL || MAPS_SEARCH_URL;
 
 export const NAV_LINKS = [
   { href: "/", label: "Home" },

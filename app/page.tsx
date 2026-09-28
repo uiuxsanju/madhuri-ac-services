@@ -8,6 +8,7 @@ import AboutSection from "@/components/AboutSection";
 import BookingForm from "@/components/BookingForm";
 import ContactSection from "@/components/ContactSection";
 import FAQ from "@/components/FAQ";
+import GoogleReviews from "@/components/GoogleReviews";
 import FinalCTA from "@/components/FinalCTA";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
@@ -102,7 +103,7 @@ export default function HomePage() {
             id="areas-title"
             eyebrow="Service areas"
             title="Serving Visakhapatnam"
-            intro="Based in Chaitanya Nagar, Maddilapalem. Call or WhatsApp to confirm service for your area."
+            intro="Based in Seethammadhara (HB Colony). Call or WhatsApp to confirm service for your area."
             action={<Link href="/service-areas" className="btn btn-outline btn-sm">View Service Areas</Link>}
           />
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1.2fr_1fr]">
@@ -118,6 +119,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <GoogleReviews />
       <FAQ items={getFaqs([...FAQ_GROUPS.home])} />
       <ContactSection logoSrc={getLogo()} />
       <FinalCTA />
