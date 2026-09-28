@@ -26,7 +26,7 @@ const Stars = ({ n }: { n: number }) => (
 export default function GoogleReviews() {
   const reviews = GOOGLE_REVIEWS;
   return (
-    <section className="section bg-surface" aria-labelledby="reviews-title">
+    <section id="reviews" className="section scroll-mt-20 bg-surface" aria-labelledby="reviews-title">
       <div className="container-page">
         <SectionHeading
           id="reviews-title"

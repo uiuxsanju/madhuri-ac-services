@@ -57,5 +57,6 @@ export const NAV_LINKS = [
   { href: "/ac-installation", label: "AC Installation" },
   { href: "/ac-maintenance", label: "Maintenance" },
   { href: "/electrical-services", label: "Electrical", mobileLabel: "Electrical Services" },
+  { href: "/#reviews", label: "Reviews" },
   { href: "/contact", label: "Contact" },
 ] as const;
