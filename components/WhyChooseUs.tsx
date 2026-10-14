@@ -10,7 +10,7 @@ const ITEMS = [
   { title: "Residential & Commercial", text: "Homes, offices, shops, clinics and commercial spaces.", Icon: Building2 },
   { title: "Safety-Focused Work", text: "Safe handling of wiring, power and refrigerant systems.", Icon: ShieldCheck },
   { title: "Reliable Service", text: "Work is tested before we leave, so you know it's done.", Icon: HardHat },
-  { title: "Local Visakhapatnam Service", text: "Based in Chaitanya Nagar, Maddilapalem, Vizag.", Icon: MapPin },
+  { title: "Local Visakhapatnam Service", text: "Based at HB Colony Road, Seethammadhara, Vizag.", Icon: MapPin },
 ];
 
 export default function WhyChooseUs() {
