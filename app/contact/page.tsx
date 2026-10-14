@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Contact Madhuri Electrical | AC & Electrician in Visakhapatnam",
   description:
-    "Contact Madhuri Electrical, HB Colony Road, Seethammadhara, Visakhapatnam. Call or WhatsApp +91 96665 42541 for AC service, AC repair and electrical work.",
+    "Contact Madhuri Electrical, Chaitanya Nagar, Maddilapalem, Visakhapatnam. Call or WhatsApp +91 96665 42541 for AC service, AC repair and electrical work.",
   path: "/contact",
 });
 

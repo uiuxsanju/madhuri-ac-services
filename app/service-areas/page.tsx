@@ -13,7 +13,7 @@ import { DIRECTIONS_URL } from "@/lib/site";
 export const metadata = buildMetadata({
   title: "Service Areas | AC & Electrical Services in Visakhapatnam | Madhuri Electrical",
   description:
-    "Madhuri Electrical serves Seethammadhara, HB Colony and nearby Visakhapatnam areas for AC service, AC repair, installation and electrical work.",
+    "Madhuri Electrical serves Maddilapalem, Chaitanya Nagar and nearby Visakhapatnam areas for AC service, AC repair, installation and electrical work.",
   path: "/service-areas",
 });
 
@@ -35,8 +35,8 @@ export default function ServiceAreasPage() {
         crumbs={[{ name: "Service Areas", path: "/service-areas" }]}
         eyebrow="Service areas"
         title="AC & Electrical Services in Visakhapatnam"
-        intro={<p>Based at HB Colony Road, Seethammadhara — serving homes, offices and businesses in and around Visakhapatnam.</p>}
-        aside={<VizagPhoto src={VIZAG_PHOTOS.aerial} alt="Aerial view of Visakhapatnam homes by the sea" caption="Seethammadhara, HB Colony" sizes="40vw" />}
+        intro={<p>Based at Chaitanya Nagar, Maddilapalem — serving homes, offices and businesses in and around Visakhapatnam.</p>}
+        aside={<VizagPhoto src={VIZAG_PHOTOS.aerial} alt="Aerial view of Visakhapatnam homes by the sea" caption="Chaitanya Nagar, Maddilapalem" sizes="40vw" />}
       />
 
       <section className="section" aria-labelledby="primary-title">

@@ -1,11 +1,11 @@
 // Service areas. Primary = where the business is based.
 // NOTE FOR OWNER: remove any area from ADDITIONAL_AREAS that you do not actually serve.
 
-export const PRIMARY_AREAS = ["Seethammadhara", "HB Colony", "Visakhapatnam"];
+export const PRIMARY_AREAS = ["Maddilapalem", "Chaitanya Nagar", "Visakhapatnam"];
 
 export const ADDITIONAL_AREAS = [
   "MVP Colony",
-  "Maddilapalem",
+  "Seethammadhara",
   "Dwaraka Nagar",
   "Akkayyapalem",
   "Asilmetta",

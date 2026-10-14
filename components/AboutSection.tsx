@@ -19,7 +19,7 @@ export default function AboutSection({ headingAs = "h2", showLink = true }: Prop
             Madhuri Electrical provides professional AC and electrical services for residential, office and commercial requirements in Visakhapatnam. Our services include AC cleaning, repair, installation, maintenance and a wide range of electrical services.
           </p>
           <p className="mt-3 text-base leading-relaxed text-muted md:text-lg">
-            We are based at HB Colony Road, Seethammadhara. You can reach us directly by phone or WhatsApp to discuss your requirement or book a visit.
+            We are based at Chaitanya Nagar, Maddilapalem. You can reach us directly by phone or WhatsApp to discuss your requirement or book a visit.
           </p>
           {showLink && (
             <Link href="/about" className="btn btn-outline mt-6">

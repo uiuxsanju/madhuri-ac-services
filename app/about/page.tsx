@@ -9,7 +9,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "About Madhuri Electrical | AC & Electrical Services, Visakhapatnam",
   description:
-    "About Madhuri Electrical — AC and electrical services for homes, offices and commercial spaces in Visakhapatnam, based at HB Colony Road, Seethammadhara.",
+    "About Madhuri Electrical — AC and electrical services for homes, offices and commercial spaces in Visakhapatnam, based at Chaitanya Nagar, Maddilapalem.",
   path: "/about",
 });
 

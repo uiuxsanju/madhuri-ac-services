@@ -23,7 +23,7 @@ export default function OgImage() {
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 30 }}>
           <div style={{ display: "flex", background: "#E31B23", padding: "14px 28px", borderRadius: 16, fontWeight: 800 }}>Call +91 96665 42541</div>
-          <div style={{ color: "#B6D2FF", fontSize: 24 }}>Seethammadhara, HB Colony, Visakhapatnam</div>
+          <div style={{ color: "#B6D2FF", fontSize: 24 }}>Chaitanya Nagar, Maddilapalem, Visakhapatnam</div>
         </div>
       </div>
     ),

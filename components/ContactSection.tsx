@@ -84,7 +84,7 @@ export default function ContactSection({ logoSrc, headingAs = "h2", title = "Con
                 <MapPin className="h-7 w-7" aria-hidden="true" />
               </span>
               <p className="mt-10 text-sm font-semibold tracking-wider text-brand-200 uppercase">Find us</p>
-              <p className="mt-1 font-display text-2xl font-extrabold">Seethammadhara, HB Colony</p>
+              <p className="mt-1 font-display text-2xl font-extrabold">Chaitanya Nagar, Maddilapalem</p>
               <p className="mt-1 text-brand-100">{BUSINESS.address.line1}, {BUSINESS.address.line2}, {BUSINESS.address.city}</p>
               <a href={DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className="btn btn-call mt-6 w-full sm:w-auto sm:self-start">
                 <Navigation className="h-5 w-5" aria-hidden="true" /> GET DIRECTIONS

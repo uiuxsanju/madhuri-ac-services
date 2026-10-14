@@ -103,7 +103,7 @@ export default function HomePage() {
             id="areas-title"
             eyebrow="Service areas"
             title="Serving Visakhapatnam"
-            intro="Based in Seethammadhara (HB Colony). Call or WhatsApp to confirm service for your area."
+            intro="Based in Chaitanya Nagar, Maddilapalem. Call or WhatsApp to confirm service for your area."
             action={<Link href="/service-areas" className="btn btn-outline btn-sm">View Service Areas</Link>}
           />
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1.2fr_1fr]">

@@ -25,7 +25,7 @@ export const CATEGORY_PAGES: Record<string, CategoryPageConfig> = {
     path: "/ac-services",
     metaTitle: "AC Service in Visakhapatnam | Madhuri Electrical",
     metaDescription:
-      "AC service in Visakhapatnam — general service, deep cleaning, jet cleaning, gas charging and split, window & inverter AC installation by Madhuri Electrical, Seethammadhara.",
+      "AC service in Visakhapatnam — general service, deep cleaning, jet cleaning, gas charging and split, window & inverter AC installation by Madhuri Electrical, Maddilapalem.",
     keywords: ["AC service in Visakhapatnam", "AC service near me", "AC technician near me", "AC servicing Vizag"],
     crumb: "AC Services",
     eyebrow: "AC Services",
@@ -62,7 +62,7 @@ export const CATEGORY_PAGES: Record<string, CategoryPageConfig> = {
     path: "/ac-repair",
     metaTitle: "AC Repair in Visakhapatnam | Madhuri Electrical",
     metaDescription:
-      "AC repair in Visakhapatnam for AC not cooling, water leakage, ice formation, noise, PCB and compressor problems. Call or WhatsApp Madhuri Electrical, Seethammadhara.",
+      "AC repair in Visakhapatnam for AC not cooling, water leakage, ice formation, noise, PCB and compressor problems. Call or WhatsApp Madhuri Electrical, Maddilapalem.",
     keywords: ["AC repair in Visakhapatnam", "AC repair near me", "AC not cooling service Visakhapatnam", "AC PCB repair Visakhapatnam", "AC compressor repair Visakhapatnam"],
     crumb: "AC Repair",
     eyebrow: "AC Repair",
@@ -229,7 +229,7 @@ export const CATEGORY_PAGES: Record<string, CategoryPageConfig> = {
     path: "/electrical-repair",
     metaTitle: "Electrical Repair in Visakhapatnam | Madhuri Electrical",
     metaDescription:
-      "Electrical repair in Visakhapatnam — short circuits, tripping MCBs, power failures, faulty switches, sockets and wiring. Call Madhuri Electrical, Seethammadhara.",
+      "Electrical repair in Visakhapatnam — short circuits, tripping MCBs, power failures, faulty switches, sockets and wiring. Call Madhuri Electrical, Maddilapalem.",
     keywords: ["electrical repair in Visakhapatnam", "electrical repair near me", "electrician near me", "short circuit repair Vizag"],
     crumb: "Electrical Repair",
     eyebrow: "Electrical Repair",

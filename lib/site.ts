@@ -15,8 +15,8 @@ export const BUSINESS = {
   whatsappNumber: "919666542541",
   whatsappUrl: "https://wa.me/919666542541",
   address: {
-    line1: "P8V8+8GH, HB Colony Road",
-    line2: "Seethammadhara, H B Colony",
+    line1: "53-23-20, Chaitanya Nagar",
+    line2: "Maddilapalem",
     city: "Visakhapatnam",
     state: "Andhra Pradesh",
     postalCode: "530013",
@@ -36,7 +36,7 @@ export const DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destinatio
 /** Google Maps search for the address. */
 export const MAPS_SEARCH_URL = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 /**
- * Google Maps embed of the real business address (the Plus Code pins the exact spot).
+ * Google Maps embed of the real business address.
  * Override with NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL — e.g. the "Embed a map" src from the
  * Google Business Profile, which then shows the business pin instead of the address pin.
  */
